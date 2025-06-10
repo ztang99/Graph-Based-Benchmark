@@ -3,7 +3,7 @@
 {blablabla}
 ## Software requirement
 {blablabla}
-## 1. modify_vcf_id.py
+## modify vcf id
 
 reassign IDs to each VCF records
 
@@ -13,7 +13,7 @@ python3 modify_vcf_id.py SMHTHAPMAP6_CHM13_v1.5_somatic_benchmark_svs.vcf SMHTHA
 
     
 
-## 2. create_fasta.py
+## create fasta file
 
 generate fasta files containing all ALT sequences for insertions
 
