@@ -3,7 +3,7 @@
 reassign IDs to each VCF records
 
 ```jsx
-python3 ../modify_vcf_id.py SMHTHAPMAP6_CHM13_v1.5_somatic_benchmark_svs.vcf SMHTHAPMAP6_CHM13_v1.6_somatic_benchmark_svs_out.vcf
+python3 modify_vcf_id.py SMHTHAPMAP6_CHM13_v1.5_somatic_benchmark_svs.vcf SMHTHAPMAP6_CHM13_v1.6_somatic_benchmark_svs_out.vcf
 ```
 
     
@@ -13,7 +13,7 @@ python3 ../modify_vcf_id.py SMHTHAPMAP6_CHM13_v1.5_somatic_benchmark_svs.vcf SMH
 generate fasta files containing all ALT sequences for insertions
 
 ```
-python3 ../create_fasta.py SMHTHAPMAP6_GRCh38_v1.6_somatic_benchmark_svs_out.vcf
+python3 create_fasta.py SMHTHAPMAP6_GRCh38_v1.6_somatic_benchmark_svs_out.vcf
 ```
 #> Number of sequences in the output: 
 hg38 42163/ 
