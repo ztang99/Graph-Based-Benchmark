@@ -1,3 +1,8 @@
+# Generate MEI truth set 
+## Introduction
+{blablabla}
+## Software requirement
+{blablabla}
 ## 1. modify_vcf_id.py
 
 reassign IDs to each VCF records
