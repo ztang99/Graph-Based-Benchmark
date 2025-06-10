@@ -25,7 +25,7 @@ hg38 42163/
 chm13: 34414
 
 
-## 3. run repeat masker
+## run repeat masker
 
 - repeatMasker: RepeatMasker(v4.1.7), Search Engine: NCBI/RMBLAST [ 2.14.1+ ], Dfam (3.8)
 
@@ -35,7 +35,7 @@ RepeatMasker/RepeatMasker -species human -dir {dir} -a output_insertion.fasta
 ```
 
 
-## 4. young MEI selection & clipping
+## young MEI selection & clipping
 
 ```bash
 #hg38
