@@ -25,7 +25,7 @@ chm13: 34414
 - repeatMasker: RepeatMasker(v4.1.7), Search Engine: NCBI/RMBLAST [ 2.14.1+ ], Dfam (3.8)
 
 ```
-RepeatMasker/RepeatMasker -species human -dir /storage2/fs1/epigenome/Active/shared_smaht/TEST_RUN_FOLDER/TrueMutSet/nahyun_tmp/mei_truthset/hg38/ -a /storage2/fs1/epigenome/Active/shared_smaht/TEST_RUN_FOLDER/TrueMutSet/nahyun_tmp/mei_truthset/hg38/output_insertion.fasta
+RepeatMasker/RepeatMasker -species human -dir {dir} -a output_insertion.fasta
 
 ```
 
