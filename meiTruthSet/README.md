@@ -51,16 +51,16 @@ Filters RepeatMasker-annotated insertions for specific MEI families (L1, Alu) an
 
 ```
 # For GRCh38 - L1
-python3 filter_class_label_0430.py output_insertion.fasta.out input.vcf output_l1.out output_l1.vcf l1
+python3 filter_class_label.py output_insertion.fasta.out input.vcf output_l1.out output_l1.vcf l1
 
 # For GRCh38 - Alu
-python3 filter_class_label_0430.py output_insertion.fasta.out input.vcf output_alu.out output_alu.vcf alu
+python3 filter_class_label.py output_insertion.fasta.out input.vcf output_alu.out output_alu.vcf alu
 
 # For CHM13 - L1
-python3 filter_class_label_0430.py output_insertion.fasta.out input.vcf output_l1.out output_l1.vcf l1
+python3 filter_class_label.py output_insertion.fasta.out input.vcf output_l1.out output_l1.vcf l1
 
 # For CHM13 - Alu
-python3 filter_class_label_0430.py output_insertion.fasta.out input.vcf output_alu.out output_alu.vcf alu
+python3 filter_class_label.py output_insertion.fasta.out input.vcf output_alu.out output_alu.vcf alu
 
 ```
 * output_insertion.fasta: FASTA with insertion sequences
