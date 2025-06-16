@@ -14,6 +14,7 @@ More information can be found here (add link to paper later).
 * Python 3
 * Biopython
 * RepeatMasker v4.1.7
+  
 An existing docker environment with the above packages: veupathdb/repeatmasker:latest
 
 ## Step 1: Reassign Unique IDs in VCF
