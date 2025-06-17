@@ -40,28 +40,7 @@ python3.8 /storage1/fs1/jin810/Active/testing/Ruttenberg/Code/FinalSMAHTCode/Mak
 
 #step 3: Variant decomposition
 
-inDir=$2/Step2SplitGraph
-outDir=$2/Step3RTGDecompose
-mkdir -p $outDir/dot
-mkdir -p $outDir/zero
-
-echo "starting dot graph"
-for file in "$inDir"/dot/HG*; do
-    nameExt=${file##*/}
-    name=${nameExt%.*}
-    echo $name
-    rtg vcfdecompose --break-indels --break-mnps -i $file -o $outDir/dot/${name}_RTG_Decompose.vcf
-    zcat $outDir/dot/${name}_RTG_Decompose.vcf.gz | grep -v "#" > $outDir/dot/${name}_RTG_Decompose.txt
-done
-
-echo "starting zero graph"
-for file in "$inDir"/zero/HG*; do
-    nameExt=${file##*/}
-    name=${nameExt%.*}
-    echo $name
-    rtg vcfdecompose --break-indels --break-mnps -i $file -o $outDir/zero/${name}_RTG_Decompose.vcf
-    zcat $outDir/zero/${name}_RTG_Decompose.vcf.gz | grep -v "#" > $outDir/zero/${name}_RTG_Decompose.txt
-done
+bash /storage1/fs1/jin810/Active/testing/Ruttenberg/Code/FinalSMAHTCode/MakeGraph/3_rtg_decompose.sh $2/Step2SplitGraph $2/Step3RTGDecompose
 
 # Step 4: Combine Haplotypes
 
