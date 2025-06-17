@@ -5,7 +5,12 @@ Code under this directory describes how truth set is generated from pangenome MC
 ## File Structure
 ```markdown
 ├──decomposeMultiSplit/
-    └── [code]
+    ├── 0_split_and_decompose.sh
+    ├── 1_multiallelic_split.sh
+    ├── 2_split_graph.py
+    ├── 3_rtg_decompose.sh
+    ├── 4_combine_and_sort.py
+    ├── 5_combine_dot_and_zero.py
 └── truthSetGeneration/
     ├── 00_run_all.sh
     ├── 1_combine_haplotypes.py
@@ -21,8 +26,28 @@ The following software packages are needed to run the code:
 python3.6 or higher
 bgzip
 tabix
+RTGtools
+bcftools x or higher
 ```
 An existing docker environment with the above packages: `elle72/basic:vszt`
+
+# decomposeMultiSplit
+
+## File Description and Run
+
+Make sure to be in the correct code directory:
+```bash
+cd ../Graph-Based_TruthSet/graphToTruthSet/decomposeMultiSplit
+```
+### 0_split_and_decompose.sh
+This script runs the entierty of the multiallelic split and decomposition process.\
+It takes in a graph VCF and an outdirectory to store all the intermidiate files/directorys and the file output.\
+to run use the following command
+```bash
+bash 0_split_and_decompose.sh $graph_vcf $output_dir
+```
+
+# truthSetGeneration
 
 ## File Description and Run
 
