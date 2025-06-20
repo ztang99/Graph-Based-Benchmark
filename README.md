@@ -5,13 +5,24 @@
 This repository holds scripts used to generate a pangenome-graph-based variant truth set. 
 This truth set generation method successfully generated a highly accurate variant truth set for artificial somatic variants in the HapMap mixture. More information about HapMap cell line mixture can be found here (add link to paper later).
 
+Analyses and validation code mentioned in the manuscript above are in a separate GitHub repository: https://github.com/jinlab-washu/HapMap-TruthSet-Manuscript.git.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [File structure](#file-structure)
+- [Set up for running the pipeline - clone repo](#getting-started)
+- [Step 1: generate pangenome graph](#step-1-generate-pangenome-graph)
+- [Step 2: generate graph-based truth set](#step-2-generate-variant-truth-set)
+    - [Step 2.1: decompose and multi-allelic split](#decomposition-and-multi-allelic-sites-split)
+    - [Step 2.2: filter for truth set variants](#truth-set-generation)
+- [Cite our work](#citation)
+
 ## File Structure
 ```markdown
-├──graphToTruthSet/
-    ├──[decomposition&multi-split]
+├── graphToTruthSet/
+    ├── decomposeMultiSplit/
     └── truthSetGeneration/
-└──meiTruthSet/
-    └──[extra steps for MEI truth set]
+└── meiTruthSet/
 ```
 
 ## Getting Started
@@ -58,4 +69,3 @@ If you use the graph-based truth set generation pipeline in your work, please co
 
 > Add citation later.
 
-Analyses and validation code mentioned in the manuscript above are in a separate GitHub repository: https://github.com/jinlab-washu/HapMap-TruthSet-Manuscript.git.
