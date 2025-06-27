@@ -45,7 +45,9 @@ Detailed explanation about how to run each step in truth set generation can be f
 
 ## Step 3: Generate MEI Truth Set
 
+A detailed illustration of code and example commands used for generating the mobile element insertions (MEI) truth set can be found [here](./meiTruthSet/README.md).
 
+The MEI truth set is based on the structural variant truth set generated in **Step 2**.
 
 ## Citation
 
