@@ -37,31 +37,15 @@ This step takes in individual haplotype assemblies, together with a reference ge
 
 We proceed with the deconstructed VCF file from this pipeline.
 
-## Step 2: Generate Variant Truth set
+## Step 2: Generate Variant Truth Set
 
-### Decomposition and multi-allelic sites split
-During the pangenome graph construction process, SVs were captured first, and thus all SNVs and indels within the SV will be "nested". The first main step of graph-based truth set generation is to decompose nested variants and split multi-allelic variants harboring the same locus. 
+All code describing how truth set is generated from pangenome MC graph output VCF is under `graphToTruthSet` subdirectory.
 
-### Truth set generation
+Detailed explanation about how to run each step in truth set generation can be found [here](./graphToTruthSet/README.md).
 
-#### Prepare Environment
-The following software packages are needed to run the code:
-```markdown
-python3.6 or higher
-bgzip
-tabix
-```
-An existing docker environment with the above packages: `elle72/basic:vszt`
+## Step 3: Generate MEI Truth Set
 
-#### Run
-To run all steps of the following truth set generation code, simply do:
-```bash
-cd ../Graph-Based_TruthSet/graphToTruthSet/truthSetGeneration
-bash 00_run_all.sh $ref_ver $input_vcf $work_dir
-```
-where `$ref_ver` is the reference used for graph construction (this variable is only used to create sub-directories under output folder for each reference coordinates), `$input_vcf` is the full path to the deconstructed VCF file from **Step 1**, and `$work_dir` denotes the working directory where all results will be written in.
 
-Detailed explanation of each sub-step in truth set generation can be found in `/graphtoTruthSet/README.md`.
 
 ## Citation
 
