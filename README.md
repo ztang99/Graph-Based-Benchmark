@@ -1,33 +1,32 @@
-# Graph-Based-TruthSet
+# Graph-Based-Benchmark
 
 ## Introduction
 
-This repository holds scripts used to generate a pangenome-graph-based variant truth set. 
-This truth set generation method successfully generated a highly accurate variant truth set for artificial somatic variants in the HapMap mixture. More information about HapMap cell line mixture can be found here (add link to paper later).
+This repository holds scripts used to generate a pangenome-graph-based variant benchmarking set. 
+This benchmarking set generation method successfully generated a highly accurate variant benchmarking set for artificial somatic variants in the HapMap mixture. More information about HapMap cell line mixture can be found here (add link to paper later).
 
-Analyses and validation code mentioned in the manuscript above are in a separate GitHub repository: https://github.com/jinlab-washu/HapMap-TruthSet-Manuscript.git.
+Analyses and validation code mentioned in the manuscript above are in a separate GitHub repository: https://github.com/jinlab-washu/HapMap-BenchmarkSet-Manuscript.git.
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [File structure](#file-structure)
 - [Set up for running the pipeline - clone repo](#getting-started)
 - [Step 1: generate pangenome graph](#step-1-generate-pangenome-graph)
-- [Step 2: generate graph-based truth set](#step-2-generate-variant-truth-set)
-    - [Step 2.1: decompose and multi-allelic split](#decomposition-and-multi-allelic-sites-split)
-    - [Step 2.2: filter for truth set variants](#truth-set-generation)
+- [Step 2: generate graph-based benchmarking set](#step-2-generate-variant-benchmarking-set)
+- [Step 3: generate MEI benchmarking set](#step-3-generate-mei-benchmarking-set)
 - [Cite our work](#citation)
 
 ## File Structure
 ```markdown
-├── graphToTruthSet/
+├── graphToBenchmarkSet/
     ├── decomposeMultiSplit/
-    └── truthSetGeneration/
-└── meiTruthSet/
+    └── benchmarkSetGeneration/
+└── meiBenchmarkSet/
 ```
 
 ## Getting Started
 ```bash
-git clone https://github.com/ztang99/Graph-Based-TruthSet.git
+git clone https://github.com/ztang99/Graph-Based-Benchmark.git
 ```
 
 ## Step 1: Generate Pangenome Graph
@@ -37,21 +36,21 @@ This step takes in individual haplotype assemblies, together with a reference ge
 
 We proceed with the deconstructed VCF file from this pipeline.
 
-## Step 2: Generate Variant Truth Set
+## Step 2: Generate Variant benchmarking set
 
-All code describing how truth set is generated from pangenome MC graph output VCF is under `graphToTruthSet` subdirectory.
+All code describing how benchmarking set is generated from pangenome MC graph output VCF is under `graphToBenchmarkSet` subdirectory.
 
-Detailed explanation about how to run each step in truth set generation can be found [here](./graphToTruthSet/README.md).
+Detailed explanation about how to run each step in benchmarking set generation can be found [here](./graphToBenchmarkSet/README.md).
 
-## Step 3: Generate MEI Truth Set
+## Step 3: Generate MEI benchmarking set
 
-A detailed illustration of code and example commands used for generating the mobile element insertions (MEI) truth set can be found [here](./meiTruthSet/README.md).
+A detailed illustration of code and example commands used for generating the mobile element insertions (MEI) benchmarking set can be found [here](./meiBenchmarkSet/README.md).
 
-The MEI truth set is based on the structural variant truth set generated in **Step 2**.
+The MEI benchmarking set is based on the structural variant benchmarking set generated in **Step 2**.
 
 ## Citation
 
-If you use the graph-based truth set generation pipeline in your work, please consider to cite:
+If you use the graph-based benchmarking set generation pipeline in your work, please consider to cite:
 
 > Add citation later.
 

@@ -1,16 +1,16 @@
-# truthSetGeneration
+# benchmarkSetGeneration
 
-This directory holds code to generate the graph-based truth set after variants have been properly decomposed and all multi-allelic sites were split.
+This directory holds code to generate the graph-based benchmark set after variants have been properly decomposed and all multi-allelic sites were split.
 
 ## File Description and Run
 
 Make sure to be in the correct code directory:
 ```bash
-cd ./Graph-Based_TruthSet/graphToTruthSet/truthSetGeneration
+cd ./Graph-Based-Benchmark/graphToBenchmarkSet/benchmarkSetGeneration
 ```
 ### 00_run_all.sh
 This shell script compiles all necessary code in order.\
-To run the entire truth set generation pipeline:
+To run the entire benchmark set generation pipeline:
 ```bash
 bash 00_run_all.sh $ref_ver $input_vcf $work_dir
 ```

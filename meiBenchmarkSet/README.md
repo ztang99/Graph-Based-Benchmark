@@ -1,6 +1,6 @@
-# Generate MEI truth set 
+# Generate MEI benchmark set 
 ## Introduction
-This repository contains a set of scripts and example commands to generate a mobile element insertions(MEI) truth set from pangenome-graph-based SV truth set. The pipeline includes:
+This repository contains a set of scripts and example commands to generate a mobile element insertions(MEI) benchmark set from pangenome-graph-based SV benchmark set. The pipeline includes:
 
 * Reassigning unique IDs to VCF records
 * Extracting insertion sequences from VCF files
@@ -12,7 +12,7 @@ More information can be found here (add link to paper later).
 
 ## File Structure
 ```markdown
-└── meiTruthSet/
+└── meiBenchmarkSet/
     ├── 1_modify_vcf_id.py
     ├── 2_create_fasta.py
     ├── 3_repeatmasker.sh

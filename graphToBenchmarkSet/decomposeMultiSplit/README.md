@@ -6,7 +6,7 @@ This directory holds code for variant decomposition and split multi-allelic site
 
 Make sure to be in the correct code directory:
 ```bash
-cd ./Graph-Based_TruthSet/graphToTruthSet/decomposeMultiSplit
+cd ./Graph-Based-Benchmark/graphToBenchmarkSet/decomposeMultiSplit
 ```
 ### 0_split_and_decompose.sh
 This script runs the entirety of the multiallelic split and decomposition process.\
