@@ -2,8 +2,8 @@
 
 ## Introduction
 
-This repository holds scripts used to generate a pangenome-graph-based variant benchmarking set. 
-This benchmarking set generation method successfully generated a highly accurate variant benchmarking set for artificial somatic variants in the HapMap mixture. More information about HapMap cell line mixture can be found here (add link to paper later).
+This repository holds scripts used to generate a [pangenome-graph-based variant benchmarking set](https://wangcluster.wustl.edu/~juanfmacias/Graph_based_HapMap_Truth_Set/).
+This benchmarking set generation method successfully generated a highly accurate variant benchmarking set for artificial somatic variants in the HapMap mixture. More information about the methodology can be found [here]().
 
 Analyses and validation code mentioned in the manuscript above are in a separate GitHub repository: https://github.com/jinlab-washu/HapMap-BenchmarkSet-Manuscript.git.
 
