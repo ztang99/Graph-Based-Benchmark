@@ -14,6 +14,7 @@ Analyses and validation code mentioned in the manuscript above are in a separate
 - [Step 1: generate pangenome graph](#step-1-generate-pangenome-graph)
 - [Step 2: generate graph-based benchmarking set](#step-2-generate-variant-benchmarking-set)
 - [Step 3: generate MEI benchmarking set](#step-3-generate-mei-benchmarking-set)
+- [Step 4: generate mitochondrial benchmarking set](#step-4-generate-mitochondria-benchmarking-set)
 - [Cite our work](#citation)
 
 ## File Structure
@@ -47,6 +48,12 @@ Detailed explanation about how to run each step in benchmarking set generation c
 A detailed illustration of code and example commands used for generating the mobile element insertions (MEI) benchmarking set can be found [here](./meiBenchmarkSet/README.md).
 
 The MEI benchmarking set is based on the structural variant benchmarking set generated in **Step 2**.
+
+## Step 4: Generate Mitochondria benchmarking set
+
+A detailed illustration of code and example commands used for generating the chrM benchmarking set can be found [here](./meiBenchmarkSet/README.md).
+
+The Mitochondria benchmarking set is based on the benchmarking set generated in **Step 2**.
 
 ## Citation
 
