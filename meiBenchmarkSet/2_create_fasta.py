@@ -1,7 +1,7 @@
 #################################################################
-## 1_modify_vcf_id.py
+## 2_create_fasta.py
 ##
-## Add VCF ID for repearmasker run
+## Generate fasta file from ALR sequence
 ##
 ## author: Nahyun Kong 
 ## contact: nahyun@wustl.edu
