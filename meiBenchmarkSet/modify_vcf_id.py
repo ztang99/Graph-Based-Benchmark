@@ -1,3 +1,11 @@
+#################################################################
+## 1_modify_vcf_id.py
+##
+## Add VCF ID for repearmasker run
+##
+## author: Nahyun Kong 
+## contact: nahyun@wustl.edu
+#################################################################
 import sys
 
 # Check if the input file is provided
