@@ -66,11 +66,17 @@ python3 4_filter_class_label.py output_insertion.fasta.out input.vcf output_l1.o
 # For GRCh38 - Alu
 python3 4_filter_class_label.py output_insertion.fasta.out input.vcf output_alu.out output_alu.vcf alu
 
+# For GRCh38 - SVA
+python3 4_filter_class_label.py output_insertion.fasta.out input.vcf output_alu.out output_sva.vcf sva
+
 # For CHM13 - L1
 python3 4_filter_class_label.py output_insertion.fasta.out input.vcf output_l1.out output_l1.vcf l1
 
 # For CHM13 - Alu
 python3 4_filter_class_label.py output_insertion.fasta.out input.vcf output_alu.out output_alu.vcf alu
+
+# For CHM13 - SVA
+python3 4_filter_class_label.py output_insertion.fasta.out input.vcf output_alu.out output_sva.vcf sva
 
 ```
 * output_insertion.fasta: FASTA with insertion sequences
