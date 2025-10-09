@@ -1,3 +1,11 @@
+#################################################################
+## 1_modify_vcf_id.py
+##
+## Add VCF ID for repearmasker run
+##
+## author: Nahyun Kong 
+## contact: nahyun@wustl.edu
+#################################################################
 import sys
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
