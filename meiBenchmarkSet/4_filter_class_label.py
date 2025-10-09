@@ -1,3 +1,11 @@
+#################################################################
+## 4_filter_class_label.py
+##
+## Select young MEI and conduct MEI clipping
+##
+## author: Nahyun Kong 
+## contact: nahyun@wustl.edu
+#################################################################
 #!/usr/bin/env python3
 import argparse
 import re
