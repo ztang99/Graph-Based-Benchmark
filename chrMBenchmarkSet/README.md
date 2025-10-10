@@ -11,9 +11,7 @@ This repository contains a set of scripts and example commands to generate a chr
 ## Software requirement
 * Python 3
 * Biopython
-* RepeatMasker v4.1.7
-  
-An existing docker environment with the above packages: veupathdb/repeatmasker:latest
+
 
 ## Step 1: Generate mitochondrial benchmark set
 1) Split a combined VCF into SNV, indel, merged small (SNV+indel), and SV VCFs.
