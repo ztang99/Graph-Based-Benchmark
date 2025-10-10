@@ -51,7 +51,7 @@ The MEI benchmarking set is based on the structural variant benchmarking set gen
 
 ## Step 4: Generate Mitochondria benchmarking set
 
-A detailed illustration of code and example commands used for generating the chrM benchmarking set can be found [here](./meiBenchmarkSet/README.md).
+A detailed illustration of code and example commands used for generating the chrM benchmarking set can be found [here](./chrMBenchmarkSet/README.md).
 
 The Mitochondria benchmarking set is based on the benchmarking set generated in **Step 2**.
 
