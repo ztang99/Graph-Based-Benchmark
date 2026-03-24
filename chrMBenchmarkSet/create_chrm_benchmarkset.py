@@ -28,7 +28,7 @@ def calculate_vaf(gt_fields):
 
 
 def open_reformer(prefix):
-    return open(f"{prefix}.reform.vcf", "w")
+    return open(f"{prefix}_mito.vcf", "w")
 
 
 def write_header_line(line, fh):
@@ -117,7 +117,7 @@ def main():
             fh.write('\t'.join(out_cols) + "\n")
 
     fh.close()
-    print(f"Done. Created: {args.output}.reform.vcf")
+    print(f"Done. Created: {args.output}_mito.vcf")
 
 
 if __name__ == '__main__':
