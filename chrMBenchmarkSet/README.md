@@ -18,7 +18,7 @@ This repository contains a set of scripts and example commands to generate a chr
 2) Reformat headers and append a calculated VAF field (labeled HL).
 
 ```jsx
-python3 create_chrm_benchmarkset.py -i 9188e8_MSDeComp_comb.vcf -o SMHTHAPMAP6_GRCh38_v1.0.0_somatic_benchmark_mito
+python3 create_chrm_benchmarkset.py -i 9188e8_MSDeComp_comb.vcf -o SMHTHAPMAP6_GRCh38_v1.1.0_somatic_benchmark
 ```
 
     
