@@ -4,7 +4,7 @@ This repository contains a set of scripts and example commands to generate a chr
 
 ## File Structure
 ```markdown
-└── meiBenchmarkSet/
+└── chrMBenchmarkSet/
     └── 1_create_chrm_benchmarkset.py
 ```
 
